@@ -8,7 +8,7 @@ import Footer from './components/Footer'
 
 function App() {
     return (
-        <div className="font-inter">
+        <div className="font-outfit">
             <Navbar />
             <Hero />
             <Features />

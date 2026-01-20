@@ -1,18 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Outfit', system-ui, sans-serif;
 }
 
 body {
   margin: 0;
   padding: 0;
-  background-color: #0a0a0a;
-  color: #ffffff;
+  background-color: #faf8f5;
+  color: #3d3d3d;
 }
 
 html {
   scroll-behavior: smooth;
+}
+
+/* Custom scrollbar for a polished feel */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1ede8;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c9a75f;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #b8944f;
 }

@@ -1,47 +1,57 @@
-import { Scissors, Sparkles, User } from 'lucide-react'
+import { Scissors, Heart, Clock, Star } from 'lucide-react'
 
 const Features = () => {
     const features = [
         {
-            icon: <Scissors className="w-12 h-12 text-amber-500" />,
-            title: 'Expert Cuts',
-            description: 'Our master barbers bring years of experience and precision to every cut, ensuring you leave looking sharp and confident.',
+            icon: <Heart className="w-10 h-10 text-gold-500" />,
+            title: 'Personal Attention',
+            description: 'No rushing, no crowds. Just you, me, and getting your cut exactly how you want it. Every visit feels like catching up with a mate.',
         },
         {
-            icon: <Sparkles className="w-12 h-12 text-amber-500" />,
-            title: 'Hot Towel Shaves',
-            description: 'Experience the ultimate in relaxation with our traditional hot towel shave service using premium products.',
+            icon: <Scissors className="w-10 h-10 text-gold-500" />,
+            title: 'Quality Cuts',
+            description: 'From classic cuts to modern fades, I take pride in every haircut. Your satisfaction is what keeps me going!',
         },
         {
-            icon: <User className="w-12 h-12 text-amber-500" />,
-            title: 'Beard Grooming',
-            description: 'From sculpting to conditioning, we provide complete beard care to keep you looking your absolute best.',
+            icon: <Clock className="w-10 h-10 text-gold-500" />,
+            title: 'Flexible Booking',
+            description: 'Running a home-based business means I can work around your schedule. Before work, weekends - let\'s find a time that suits.',
+        },
+        {
+            icon: <Star className="w-10 h-10 text-gold-500" />,
+            title: 'Community Focused',
+            description: 'I live and work right here in Cecil Hills. When you support my business, you\'re supporting a local family.',
         },
     ]
 
     return (
-        <section id="about" className="bg-neutral-950 py-20 px-4">
-            <div className="max-w-7xl mx-auto">
+        <section id="about" className="bg-white py-20 px-4">
+            <div className="max-w-6xl mx-auto">
                 <div className="text-center mb-16">
-                    <h2 className="font-playfair text-4xl md:text-5xl font-bold text-white mb-4">
-                        The Masterpiece Experience
+                    <span className="inline-block bg-gold-500/10 text-gold-600 px-4 py-2 rounded-full text-sm font-medium mb-4">
+                        Why Choose Local?
+                    </span>
+                    <h2 className="font-outfit text-3xl md:text-4xl font-bold text-warm-800 mb-4">
+                        More Than Just a Haircut
                     </h2>
-                    <div className="w-24 h-1 bg-amber-500 mx-auto"></div>
+                    <p className="text-warm-600 text-lg max-w-2xl mx-auto">
+                        When you visit Masterpiece Barbers, you're not just another customer - you're a neighbour and a friend.
+                    </p>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     {features.map((feature, index) => (
                         <div
                             key={index}
-                            className="bg-neutral-900 p-8 rounded-sm border border-neutral-800 hover:border-amber-500 transition-all duration-300 group"
+                            className="bg-cream-50 p-8 rounded-2xl border border-cream-300 hover:border-gold-400 hover:shadow-lg transition-all duration-300 group"
                         >
-                            <div className="mb-6 group-hover:scale-110 transition-transform duration-300">
+                            <div className="mb-5 inline-flex items-center justify-center w-16 h-16 bg-white rounded-xl shadow-sm group-hover:scale-110 transition-transform duration-300">
                                 {feature.icon}
                             </div>
-                            <h3 className="font-playfair text-2xl font-semibold text-white mb-4">
+                            <h3 className="font-outfit text-xl font-semibold text-warm-800 mb-3">
                                 {feature.title}
                             </h3>
-                            <p className="text-gray-400 leading-relaxed">
+                            <p className="text-warm-600 leading-relaxed">
                                 {feature.description}
                             </p>
                         </div>
